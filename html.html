@@ -1,10 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    test
+    <main id="main-page"> <!--MAIN PAGE-->
+        <h1 id="Main-Title">Trouve toutes les parties de l'énigme afin de découvrir à qui il appartient.</h1>
+        <container-btn id="container-btn">
+            <button  onclick="LaunchQuizz()" id="unlock-1"><i class="fa fa-lock"></i></i></button>
+            <button  onclick="LaunchCode()"  id="unlock-2"><i class="fa fa-lock"></i></i></button>
+            <button  onclick="LaunchMath()"  id="unlock-3"><i class="fa fa-lock"></i></i></button>
+            <button  onclick="BringBackMainPageUnlock(4)" id="unlock-4">De qui ?</button>
+        </container-btn>
+        <container-hidewords>
+            <h1 id="hidewords1" >•--•/•-•/•/-•/---/--//=//•••••/•-••</h1>
+            <h1 id="hidewords2" >🏠AICA🏠</h1>
+            <h1 id="hidewords3" >Mar - Sid - Mat</h1>
+            <h1 id="hidewords4" >Devine</h1>
+        </container-hidewords>
+    </main>
+    <!--QUIZZ PAGE-->
+    <container-quizz id="quiz-container">
+        <div id="question-container">
+          <h2 id="question"></h2>
+        </div>
+        <div id="choices-container">
+          <button class="choice"></button>
+          <button class="choice"></button>
+          <button class="choice"></button>
+          <button class="choice"></button>
+        </div>
+        <div id="result-container">
+          <p id="result"></p>
+          <h1 id="result-text">Bravo ! tu as réussi</h1>
+          <button id="result-btn" onclick="BringBackMainPageUnlock(1)">Continuer</button>
+        </div>
+        <div id="miss-container">
+          <h1 >Vous Avez Raté</h1>
+          <button id="miss-btn" onclick="RestartQuiz()">Réssayer</button>
+        </div>
+    </container-quizz>
+     <!--CODE PAGE-->
+    <container-code id="code-container">
+      <h1>Entrer le code</h1>
+      <div id="input-container">
+        <input type="number" onKeyPress="if(this.value.length==1) return false;" min="0" max="9" id="input-1">
+        <input type="number" onKeyPress="if(this.value.length==1) return false;" min="0" max="9" id="input-2">
+        <input type="number" onKeyPress="if(this.value.length==1) return false;" min="0" max="9" id="input-3">
+      </div>
+        <button id="checkcode-button" onclick="CheckCode()">Valider</button>
+    </container-code>
+
+     <!--Math Enigme PAGE-->
+     <container-math id="math-container">
+      <h1>Trouve la réponse de l'énigme!</h1>
+          <img src="MathEnigme.png" alt="" id="image">
+          <input type="number" onKeyPress="if(this.value.length==3) return false;" min="0" max="1000" id="input-Math">
+          <button id="Math-btn" onclick="CheckAnswerMath()">Valider</button>
+    </container-math>
+    <button id="bringback" onclick="BringBackMainPage()"><i class="fa fa-home"></i></i></button>    
+    <script src="script/script.js"></script>
 </body>
 </html>

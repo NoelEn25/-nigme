@@ -1,0 +1,296 @@
+body {
+  background: linear-gradient(0deg, #d1e2ec 0%, #8cb6ca 100%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 97.1vh;
+  font-family: Arial, sans-serif;
+}
+
+#bringback {
+  display: block;
+  position: absolute;
+  bottom: 90%;
+  left: 2%;
+  font-size: 5vh;
+  color: #293342;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+
+#Main-Title {
+  font-size: 4vh;
+  color: #293342;
+  text-align: -webkit-center;
+}
+
+container-btn button {
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 5vh;
+  width: 25vw;
+  border-radius: 10px;
+  color: #5377a2;
+  border-color: #5377a2;
+  margin-top: 100px;
+  text-align: -webkit-center;
+}
+
+#unlock-1 {
+  top: 15%;
+  left: 50%;
+  text-align: -webkit-center;
+}
+
+#unlock-2 {
+  top: 35%;
+  left: 50%;
+  text-align: -webkit-center;
+}
+
+#unlock-3 {
+  top: 55%;
+  left: 50%;
+  text-align: -webkit-center;
+}
+
+#unlock-4 {
+  top: 75%;
+  left: 50%;
+  width: 15vh;
+  color: #293342;
+  border-color: #5377a2;
+  font-size: 3vh;
+  border-radius: 10px;
+  text-align: -webkit-center;
+}
+
+container-hidewords h1 {
+  display: none;
+  position: absolute;
+  font-size: 5vh;
+  transform: translate(-50%, -50%);
+  color: #293342;
+  margin-top: 100px;
+}
+
+#hidewords1 {
+  font-size: 6vw;
+  top: 15%;
+  left: 50%;
+  width: 80%;
+  text-align: center;
+}
+
+#hidewords2 {
+  top: 35%;
+  left: 50%;
+  width: 80%;
+  text-align: center;
+}
+
+#hidewords3 {
+  top: 55%;
+  left: 50%;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+#hidewords4 {
+  top: 75%;
+  left: 50%;
+  font-size: 3vh;
+  text-align: center;
+}
+
+/*Quizz*/
+
+container-quizz h1 {
+  color: #293342;
+}
+
+container-quizz {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 150px;
+}
+
+container-quizz #question-container {
+  font-size: 2vh;
+  text-align: center;
+}
+
+container-quizz h2 {
+  color: #293342;
+}
+
+container-quizz .choice {
+  font-size: 5vh;
+  color: #293342;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-bottom: 3vh;
+  padding: 10px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+container-quizz .choice:hover {
+  background-color: #ccc;
+}
+
+container-quizz #result-container {
+  font-size: 7vh;
+  display: none;
+  text-align: center;
+}
+
+container-quizz #result {
+  color: #293342;
+}
+
+container-quizz #result-text {
+  font-size: 5vh;
+  color: #293342;
+}
+
+container-quizz #result-btn {
+  font-size: 5vh;
+  text-align: center;
+  border-radius: 30px;
+  color: #293342;
+  padding: 10px;
+  background-color: rgb(235, 232, 232);
+  box-shadow: 4px 5px;
+}
+
+container-quizz #result-btn:hover {
+  font-size: 5.1vh;
+  background-color: rgb(198, 192, 192);
+}
+
+container-quizz #miss-container {
+  font-size: 5vh;
+  display: none;
+  color: #293342;
+  text-align: center;
+}
+
+container-quizz #miss-btn {
+  font-size: 5vh;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  color: #293342;
+  background-color: rgb(243, 236, 236);
+  box-shadow: 5px 10px;
+}
+
+container-quizz #miss-btn:hover {
+  font-size: 5.1vh;
+  background-color: rgb(198, 192, 192);
+}
+
+/* CODE */
+
+container-code {
+  display: none;
+}
+
+container-code h1 {
+  font-size: 8vh;
+  padding-top: 45px;
+  color: #293342;
+  text-align: center;
+}
+
+container-code #input-container {
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+}
+
+container-code #input-container input {
+  font-size: 10vh;
+  width: 20vw;
+  margin-top: 80px;
+  border-radius: 5px;
+  text-align: center;
+  border: 0px;
+}
+
+container-code #input-container input:focus {
+  outline-color: #293342;
+}
+
+container-code button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-size: 5vh;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  color: #293342;
+  background-color: white;
+  border: none;
+}
+
+/*Math engime*/
+
+container-math {
+  display: none;
+}
+
+container-math h1 {
+  font-size: 4vh;
+  margin-top: 90px;
+  color: #293342;
+  text-align: center;
+}
+
+container-math img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 550px;
+  margin-top: 50px;
+}
+
+container-math input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-size: 8vh;
+  text-align: center;
+  width: 15vh;
+  border-radius: 5px;
+  border: 0px;
+}
+
+container-math input:focus {
+  outline-color: #293342;
+}
+
+container-math button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 5vh;
+  text-align: center;
+  border-radius: 20px;
+  color: #293342;
+  background-color: white;
+  border: none;
+}
